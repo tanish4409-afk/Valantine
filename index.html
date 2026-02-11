@@ -26,13 +26,6 @@ body {
     max-width: 400px;
 }
 
-.container img {
-    width: 200px;
-    height: auto;
-    border-radius: 15px;
-    margin-bottom: 20px;
-}
-
 h1 {
     color: #d63384;
     font-size: 28px;
@@ -67,16 +60,18 @@ button {
     color: white;
     position: absolute;
 }
+
+.result-img {
+    width: 220px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
 </style>
 </head>
 
 <body>
 
 <div class="container">
-
-    <!-- Add Your Image Here -->
-    <!-- Replace photo.jpg with your image file name -->
-    <img src="photo.jpg/2026-02-11_12-43-23_832.jpg" alt="Fiza">
 
     <h1 id="question">Will you be my Valentine Fiza? ❤️</h1>
 
@@ -100,7 +95,10 @@ function moveButton() {
 function accept() {
     document.querySelector('.container').innerHTML = `
         <h1>Yay Fiza! 💖</h1>
-        <p style="font-size:20px; color:#d63384;">I knew that you will say yes My Love! ❤️</p>
+        <p style="font-size:20px; color:#d63384;">
+            I knew that you will say yes My Love! ❤️
+        </p>
+        <img src="2026-02-11_12-43-23_832.jpg" class="result-img" alt="Fiza">
     `;
     document.body.style.backgroundColor = "#ffb6c1";
 }
